@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>HOME PAGE</H1>
+    <ul id="uList">
+        <a > <li class="item" id="11">Dashboard</li></a>
+        <li class="item">contact</li>
+        <li class="item">services</li>
+    </ul>
+<p id="parag"></p>
+<script>
+var newItem = document.createElement("li");
+var L = document.getElementById("uList");
+newItem.textContent = "Home";
+uList.appendChild(newItem);
+
+var h1 = document.querySelector("h1");
+
+    h1.style.color = "red";
+
+var dashboardItem = document.getElementById("11");
+var link = document.createElement("a");
+link.href = "dashboard.html"; 
+dashboardItem.parentNode.insertBefore(link, dashboardItem);
+link.appendChild(dashboardItem);
+
+var paragElement = document.getElementById("parag");
+paragElement.textContent = "BONJOUR";
+
+
+</script>
+
+
+
+   
+</body>
+</html>
