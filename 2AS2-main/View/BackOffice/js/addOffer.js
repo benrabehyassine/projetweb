@@ -1,5 +1,5 @@
 // // Partie 1
-// function validerFormulaire() {
+ function validerFormulaire() {
    
 //     var title = document.getElementById("title").value;
 //     var destination = document.getElementById("destination").value;
@@ -44,11 +44,11 @@ document.getElementById("addTravelOfferForm").addEventListener("submit", functio
     //event.preventDefault();
     
   
-    var title = document.getElementById("title").value;
-    var destination = document.getElementById("destination").value;
-    var departureDate = document.getElementById("departure_date").value;
-    var returnDate = document.getElementById("return_date").value;
-    var price = document.getElementById("price").value;
+    var title = document.getElementById("Title").value;
+    var destination = document.getElementById("Destination").value;
+    var departureDate = document.getElementById("DepartureDate").value;
+    var returnDate = document.getElementById("ReturnDate").value;
+    var price = document.getElementById("Price").value;
     
     var isValid = true;
 
@@ -69,7 +69,7 @@ document.getElementById("addTravelOfferForm").addEventListener("submit", functio
 
     // Vérification de la destination
     var destinationPattern = /^[A-Za-z\s]{3,}$/;
-    if (!destinationPattern.test(destination)) {
+    if (!destinationPattern.test(Destination)) {
         displayMessage("destination", "The destination must contain only letters and at least 3 characters.", true);
         isValid = false;
     } else {
@@ -77,11 +77,11 @@ document.getElementById("addTravelOfferForm").addEventListener("submit", functio
     }
 
     // Vérification des dates
-    if (new Date(departureDate) == "Invalid Date" || new Date(returnDate) == "Invalid Date") {
+    if (new Date(departureDate) == "Invalid Date" || new Date(ReturnDate) == "Invalid Date") {
         displayMessage("departure_date", "Please select valid dates.", true);
         displayMessage("return_date", "Please select valid dates.", true);
         isValid = false;
-    } else if (new Date(returnDate) <= new Date(departureDate)) {
+    } else if (new Date(returnDate) <= new Date(DepartureDate)) {
         displayMessage("return_date", "The return date must be later than the departure date.", true);
         isValid = false;
     } else {

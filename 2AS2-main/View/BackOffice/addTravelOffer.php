@@ -88,8 +88,8 @@
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 
-                                                <form id="addTravelOfferForm" action="Verification.php" method="POST">
-                                                <label for="title">Title:</label><br>
+                                            <form id="addTravelOfferForm" action="Verification.php" method="POST">
+    <label for="title">Title:</label><br>
     <input type="text" id="title" name="Title" required><br>
 
     <label for="destination">Destination:</label><br>
@@ -103,6 +103,12 @@
 
     <label for="price">Price:</label><br>
     <input type="number" id="price" name="Price" step="0.01" required><br>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox small">
+            <input type="checkbox" class="custom-control-input" id="disponible" name="Disponible">
+            <label class="custom-control-label" for="disponible">Disponible</label>
+        </div>
+    </div> <br>
 
     <label for="category">Category:</label><br>
     <select id="category" name="Category" required>
@@ -110,17 +116,12 @@
         <option value="relaxation">Relaxation</option>
         <option value="culture">Culture</option>
     </select><br>
-                                            <br>
-                                            
-                                            
-    <!-- Vos champs de formulaire ici -->
-    <button type="submit" class="btn btn-primary btn-user btn-block" onsubmit="return validerFormulaire()">Add Offer</button>
 
-                                                    <!-- <button type="submit" 
-                                                    class="btn btn-primary btn-user btn-block" 
-                                                    
-                                                    >Add Offer</button> -->
-                                                </form>
+    <!-- Ajout du champ Disponible -->
+    
+
+    <button type="submit" class="btn btn-primary btn-user btn-block">Add Offer</button>
+</form>
                                             </div>
                                         </div>
                                     </div>

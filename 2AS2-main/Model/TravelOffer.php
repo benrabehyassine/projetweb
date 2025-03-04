@@ -3,33 +3,33 @@
 class TravelOffer
 {   /*  Question 1.b
     public  $id;
-    public  $title;
-    public  $destination;
-    public  $departure_date;
-    public  $return_date;
-    public $price;
-    public $disponible;
-    public $category;
+    public  $Title;
+    public  $Destination;
+    public  $DepartureDate;
+    public  $ReturnDate;
+    public $Price;
+    public $Disponible;
+    public $Category;
 */
 
 private  $id;
-private  $title;
-private  $destination;
-private  $departure_date;
-private  $return_date;
-private $price;
-private $disponible;
-private $category;
+private  $Title;
+private  $Destination;
+private  $DepartureDate;
+private  $ReturnDate;
+private $Price;
+private $Disponible;
+private $Category;
     // question 3
-    public function __construct($title=null, $destination=null,$departure_date=null, $return_date = null, $price = null, $disponible = null, $category = null)
+    public function __construct($Title=null, $Destination=null,$DepartureDate=null, $ReturnDate = null, $Price = null, $Disponible = null, $Category = null)
     {
-        $this->title= $title;
-        $this->destination= $destination;
-        $this->departure_date= $departure_date;
-        $this->return_date= $return_date;
-        $this->price= $price;
-        $this->disponible= $disponible;
-        $this->category= $category;
+        $this->Title= $Title;
+        $this->Destination= $Destination;
+        $this->DepartureDate= $DepartureDate;
+        $this->ReturnDate= $ReturnDate;
+        $this->Price= $Price;
+        $this->Disponible= $Disponible;
+        $this->Category= $Category;
     }
     public function show() {
         echo '<table border=1 width="100%">
@@ -40,75 +40,75 @@ private $category;
                 <td>Return Date</td>
                 <td>Price</td>
                 <td>Disponibility</td>
-                 <td>category</td>
+                 <td>Category</td>
             </tr>
             <tr>
-                <td>'. $this->title .'</td>
-                <td>'. $this->destination .'</td>
-                <td>'. $this->departure_date .'</td>
-                <td>'. $this->return_date .'</td>
-                <td>'. $this->price .'</td>
-                <td>'. $this->disponible .'</td>
-                 <td>'. $this->category .'</td>
+                <td>'. $this->Title .'</td>
+                <td>'. $this->Destination .'</td>
+                <td>'. $this->DepartureDate .'</td>
+                <td>'. $this->ReturnDate .'</td>
+                <td>'. $this->Price .'</td>
+                <td>'. $this->Disponible .'</td>
+                 <td>'. $this->Category .'</td>
             </tr>
         </table>';
     }
      // Getters
      public function getTitle() {
-        return $this->title;
+        return $this->Title;
     }
 
     public function getDestination() {
-        return $this->destination;
+        return $this->Destination;
     }
 
     public function getDepartureDate() {
-        return $this->departure_date;
+        return $this->DepartureDate;
     }
 
     public function getReturnDate() {
-        return $this->return_date;
+        return $this->ReturnDate;
     }
 
     public function getPrice() {
-        return $this->price;
+        return $this->Price;
     }
 
     public function isDisponible() {
-        return $this->disponible;
+        return $this->Disponible;
     }
 
     public function getCategory() {
-        return $this->category;
+        return $this->Category;
     }
 
     // Setters
-    public function setTitle($title) {
-        $this->title = $title;
+    public function setTitle($Title) {
+        $this->Title = $Title;
     }
 
-    public function setDestination($destination) {
-        $this->destination = $destination;
+    public function setDestination($Destination) {
+        $this->Destination = $Destination;
     }
 
-    public function setDepartureDate($departure_date) {
-        $this->departure_date = $departure_date;
+    public function setDepartureDate($DepartureDate) {
+        $this->DepartureDate = $DepartureDate;
     }
 
-    public function setReturnDate($return_date) {
-        $this->return_date = $return_date;
+    public function setReturnDate($ReturnDate) {
+        $this->ReturnDate = $ReturnDate;
     }
 
-    public function setPrice($price) {
-        $this->price = $price;
+    public function setPrice($Price) {
+        $this->Price = $Price;
     }
 
-    public function setDisponible($disponible) {
-        $this->disponible = $disponible;
+    public function setDisponible($Disponible) {
+        $this->Disponible = $Disponible;
     }
 
-    public function setCategory($category) {
-        $this->category = $category;
+    public function setCategory($Category) {
+        $this->Category = $Category;
     }
 }
 
